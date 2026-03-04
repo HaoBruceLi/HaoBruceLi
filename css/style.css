@@ -215,8 +215,24 @@ header {background: #000000;height: 380px;padding: 60px 0 200px;position: relati
 .download-sec:hover {background: #fff;color: #fd4733;text-decoration: none;
     }
 
-.profile-img {width: 350px;height: 350px;background: #000;    overflow: hidden;margin:0 auto;    text-align: center;margin-bottom: -180px;position: absolute;left: 50%;margin-left: -180px;}
-.profile-img img {   margin-top: 30px;}
+.profile-img {
+    width: 350px;
+    height: 350px;
+    background: #000;
+    margin: 0 auto;
+    margin-bottom: -180px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* 如果想填满圆形头像 */
+    margin: 0;           /* 删除 margin-top */
+}
 .banner-sec{text-align: center;padding-top: 200px;    padding-bottom: 60px;}
 .banner-sec h2{font-size: 50px;line-height: 67px;color: #959595;letter-spacing: -0.4px;margin-bottom: 60px;    padding: 0 20px;}
  .devider {width: 1px;height: 100px;background: #ccc;display:block;margin: 0 auto;}
@@ -593,4 +609,5 @@ a.bsp-controls.next {width: 40px;
 .education-main .left-grid{ border-right: 1px solid #ccc;}  
 .portfolio-inner{margin: 100px 0;} 
 .portfolio-inner .main_folio {margin-bottom: 100px;}
+
 
